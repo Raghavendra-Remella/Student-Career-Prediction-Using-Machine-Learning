@@ -1,74 +1,78 @@
 # **Student Career Prediction Using Machine Learning**
 
-## **📌 Overview**
+## **Overview**
 
-This project utilizes machine learning, specifically a neural network (CNN), to predict the most suitable career path for students based on academic data. The system processes student data and applies classification models to provide career recommendations.
+This project applies machine learning, particularly a deep neural network (CNN), to predict the most suitable career path for students based on academic data. By processing student records and utilizing classification models, the system provides personalized career recommendations.
 
 
-```
+## **Features**
 
-## **⚙️ Features**
+- Upload student academic data for career prediction.
+- Data preprocessing and visualization.
+- Implementation of a deep learning model (CNN).
+- Career classification based on student performance.
+- Interactive web interface for easy accessibility.
 
-✅ Upload student academic data\
-✅ Preprocess and visualize data\
-✅ Apply deep learning models (CNN)\
-✅ Generate career predictions\
-✅ User-friendly web interface
+## **Installation**
 
-## **🛠 Installation**
-
-1️⃣ Clone the repository:
+1. Clone the repository:
 
 ```sh
 git clone https://github.com/Raghavendra-Remella/Student-Career-Prediction-Using-Machine-Learning.git
 cd Student-Career-Prediction-Using-Machine-Learning
 ```
 
-2️⃣ Create a virtual environment (optional but recommended):
+2. Create a virtual environment (recommended for dependency management):
 
 ```sh
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3️⃣ Install dependencies:
+3. Install dependencies:
 
 ```sh
 pip install -r requirements.txt
 ```
 
-## **🚀 Usage**
+## **Usage**
 
-1️⃣ Run the Flask application:
+1. Run the Flask application:
 
 ```sh
 python app.py
 ```
 
-2️⃣ Open a browser and go to:
+2. Open your browser and go to:
 
 ```
 http://127.0.0.1:5000/
 ```
 
-3️⃣ Upload student data and get career predictions.
+3. Upload student academic records and receive career predictions.
 
-## **🧠 Machine Learning Model Used**
+## **Machine Learning Model**
 
-- **Neural Network (CNN):** A deep learning model with multiple dense layers trained using categorical cross-entropy loss and the Adam optimizer.
-- **Training:** Uses **StandardScaler** for feature scaling and **Keras Sequential API** for model definition.
-- **Performance Visualization:** Training and validation loss & accuracy plotted using Matplotlib.
+- **Deep Neural Network (CNN):**
+  - Built using the Keras Sequential API.
+  - Features multiple dense layers with ReLU activation.
+  - Output layer applies softmax activation for multi-class classification.
+  
+- **Training Process:**
+  - StandardScaler is used for feature scaling.
+  - Trained on labeled student data with categorical cross-entropy loss.
+  - Optimized using the Adam optimizer.
+  - Evaluated on test data and visualized using Matplotlib.
 
-## **📊 Model Training Process**
+## **Model Training Steps**
 
-1️⃣ Data Preprocessing: Loads and scales training/testing data.\
-2️⃣ Model Definition: A 10-layer deep neural network.\
-3️⃣ Training: Trained with 1000 epochs and batch size of 512.\
-4️⃣ Evaluation: Model performance assessed on test data.\
+1. **Data Preprocessing:** Reads and scales input features.
+2. **Model Definition:** Implements a deep CNN with 10 layers.
+3. **Training:** Runs for 1000 epochs with a batch size of 512.
+4. **Evaluation:** Computes accuracy on test data.
+5. **Saving the Model:** Trained model is stored as **model.h5**.
 
-## **📌 Contributing**
+## **Contributing**
 
-Contributions are welcome! If you'd like to improve the project, feel free to fork the repository and submit a pull request.
-
-
+Contributions are welcome! If you have ideas for improvement, feel free to fork the repository, make changes, and submit a pull request.
 
